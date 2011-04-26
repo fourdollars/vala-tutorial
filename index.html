@@ -187,6 +187,24 @@
         padding: 0;
         margin: 0;
       }
+
+      h1.large {
+        font-family: 'Droid Sans';
+        color: black;
+        font-size: 800%;
+      }
+
+      h1.middle {
+        font-family: 'Droid Sans';
+        color: black;
+        font-size: 600%;
+      }
+
+      h1.small {
+        font-family: 'Droid Sans';
+        color: black;
+        font-size: 300%;
+      }
       
       h2 {
         font-family: 'Droid Sans';
@@ -329,6 +347,39 @@
         margin-bottom: 10px;
         border: 1px solid rgba(0, 0, 0, 0.2);
       }
+
+      div.code-large {
+        text-align: left;
+        display: block;
+        padding: 10px 20px;
+        margin: 10px 20px;
+        color: black;
+        background: rgba(255, 255, 255, 0.4);
+        -webkit-border-radius: 8px;
+        -khtml-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        font-size: 200%;
+      }
+
+      div.code {
+        text-align: left;
+        display: block;
+        padding: 10px 20px;
+        margin: 10px 20px;
+        color: black;
+        background: rgba(255, 255, 255, 0.4);
+        -webkit-border-radius: 8px;
+        -khtml-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        font-size: 150%;
+        line-height:100%;
+      }
       
       video {
         -moz-border-radius: 8px;
@@ -425,11 +476,115 @@
       <div class="slides"> 
         <div class="slide"> 
           <section class="middle"> 
-            <h2>Slides template</h2> 
-            <p>Click here, Press <span class="key">&rarr;</span> key to advance.</p> 
+          <h1 class="large">Vala 幼幼班</h1> 
           </section> 
         </div> 
-        
+
+        <div class="slide"> 
+          <section class="middle"> 
+          <h1 class="large">自我介紹</h1> 
+          </section> 
+        </div> 
+
+        <div class="slide"> 
+          <section class="middle"> 
+          <h1 class="large">本名</h1> 
+          </section> 
+        </div> 
+
+        <div class="slide"> 
+          <section class="middle"> 
+          <h1 class="large">李世元</h1> 
+          </section> 
+        </div> 
+
+        <div class="slide"> 
+          <section class="middle"> 
+          <h1 class="large">不重要</h1> 
+          </section> 
+        </div> 
+
+        <div class="slide"> 
+          <section class="middle"> 
+          <h1 class="large">暱稱</h1> 
+          </section> 
+        </div> 
+
+        <div class="slide"> 
+          <section class="middle"> 
+          <h1 class="large">四元</h1> 
+          </section> 
+        </div> 
+
+        <div class="slide"> 
+          <section class="middle"> 
+          <h1 class="large">不值錢</h1> 
+          </section> 
+        </div> 
+
+        <div class="slide"> 
+          <section class="middle"> 
+          <h1 class="large">其它的</h1> 
+          </section> 
+        </div> 
+
+        <div class="slide"> 
+          <section class="middle"> 
+          <h1 class="small">http://about.me/fourdollars</h1> 
+          </section> 
+        </div> 
+
+        <div class="slide"> 
+          <section class="middle"> 
+          <h1 class="middle">Vala 是什麼？</h1> 
+          </section> 
+        </div> 
+
+        <div class="slide"> 
+          <section class="middle"> 
+
+        <div class="code-large"> 
+<font color="#8080ff">/*</font><font color="#8080ff">&nbsp;hello.vala </font><font color="#8080ff">*/</font><br>
+<br>
+<font color="#00ff00">void</font>&nbsp;main () {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;Hello World!</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
+}<br>
+</font>
+      </div>
+          </section> 
+        </div> 
+
+        <div class="slide"> 
+          <section class="middle"> 
+          <h1 class="large">變成</h1> 
+          </section> 
+        </div> 
+
+        <div class="slide"> 
+          <section class="middle"> 
+        <div class="code"> 
+ <font color="#8080ff">/*</font><font color="#8080ff">&nbsp;hello.c </font><font color="#8080ff">*/</font><br>
+<br>
+<font color="#ff40ff">#include </font><font color="#ff6060">&lt;glib.h&gt;</font><br>
+<font color="#ff40ff">#include </font><font color="#ff6060">&lt;glib-object.h&gt;</font><br>
+<font color="#ff40ff">#include </font><font color="#ff6060">&lt;stdio.h&gt;</font><br>
+<br>
+<font color="#00ff00">void</font>&nbsp;_vala_main (<font color="#00ff00">void</font>);<br>
+<br>
+<font color="#00ff00">void</font>&nbsp;_vala_main (<font color="#00ff00">void</font>) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fprintf (<font color="#ff6060">stdout</font>, <font color="#ff6060">&quot;Hello World!</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
+}<br>
+<br>
+<font color="#00ff00">int</font>&nbsp;main (<font color="#00ff00">int</font>&nbsp;argc, <font color="#00ff00">char</font>&nbsp;** argv) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;g_type_init ();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;_vala_main ();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">return</font>&nbsp;<font color="#ff6060">0</font>;<br>
+}<br>
+</font>       
+      </div>
+          </section> 
+        </div> 
+
         <div class="slide"> 
           <section class="middle"> 
             <h2> 
