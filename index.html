@@ -1,19 +1,19 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <!--
   Copyright 2010 Google Inc.
- 
+
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
   You may obtain a copy of the License at
- 
+
      http://www.apache.org/licenses/LICENSE-2.0
- 
+
   Unless required by applicable law or agreed to in writing, software
   distributed under the License is distributed on an "AS IS" BASIS,
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.
- 
+
   Original slides: Marcin Wichary (mwichary@google.com)
   Modifications: Chrome Developer Relations <chrome-devrel@googlegroups.com>
 -->
@@ -33,7 +33,7 @@
         position: absolute;
         left: 0px; top: 0px;
       }
-      
+
       .presentation {
         position: absolute;
         height: 100%;
@@ -44,7 +44,7 @@
         overflow: hidden;
         background: #778;
       }
-      
+
       .slides {
         width: 100%;
         height: 100%;
@@ -56,15 +56,15 @@
         -moz-transition: -moz-transform 1s ease-in-out;
         -o-transition: -o-transform 1s ease-in-out;
         transition: transform 1s ease-in-out;
-        
+
         /* so it's visible in the iframe. */
         -webkit-transform: scale(0.8);
         -moz-transform: scale(0.8);
         -o-transform: scale(0.8);
         transform: scale(0.8);
-        
+
       }
-      
+
       .slide {
         display: none;
         position: absolute;
@@ -87,7 +87,7 @@
         -o-transform: scale(1);
         transform: scale(1);
       }
-      
+
       .slide:nth-child(even) {
         -moz-border-radius: 20px 0;
         -khtml-border-radius: 20px 0;
@@ -95,7 +95,7 @@
         -webkit-border-top-left-radius: 20px;
         -webkit-border-bottom-right-radius: 20px;
       }
-      
+
       .slide:nth-child(odd) {
         -moz-border-radius: 0 20px;
         -khtml-border-radius: 0 20px;
@@ -103,11 +103,11 @@
         -webkit-border-top-right-radius: 20px;
         -webkit-border-bottom-left-radius: 20px;
       }
- 
+
       .slide p, .slide textarea {
         font-size: 120%;
       }
- 
+
       .slide .counter {
         color: #999999;
         position: absolute;
@@ -116,58 +116,58 @@
         display: block;
         font-size: 70%;
       }
- 
+
       .slide.title > .counter,
       .slide.segue > .counter,
       .slide.mainTitle > .counter {
         display: none;
       }
- 
+
       .force-render {
         display: block;
         visibility: hidden;
       }
-      
+
       .slide.far-past {
         display: block;
         margin-left: -2400px;
       }
-      
+
       .slide.past {
         visibility: visible;
         display: block;
         margin-left: -1400px;
       }
-      
+
       .slide.current {
         visibility: visible;
         display: block;
         margin-left: -450px;
       }
-      
+
       .slide.future {
         visibility: visible;
         display: block;
         margin-left: 500px;
       }
-      
+
       .slide.far-future {
         display: block;
         margin-left: 1500px;
       }
-      
+
       body.three-d div.slides {
         -webkit-transform: translateX(50px) scale(0.8) rotateY(10deg);
         -moz-transform: translateX(50px) scale(0.8) rotateY(10deg);
         -o-transform: translateX(50px) scale(0.8) rotateY(10deg);
         transform: translateX(50px) scale(0.8) rotateY(10deg);
       }
-      
+
       /* Content */
-      
+
       @font-face { font-family: 'Junction'; src: url(src/Junction02.otf); }
       @font-face { font-family: 'LeagueGothic'; src: url(src/LeagueGothic.otf); }
-      
+
       header {
         font-family: 'Droid Sans';
         font-weight: normal;
@@ -179,7 +179,7 @@
         padding: 0;
         font-size: 140%;
       }
-      
+
       h1 {
         font-size: 140%;
         display: inline;
@@ -192,12 +192,13 @@
         font-family: 'Droid Sans';
         color: black;
         font-size: 800%;
+        line-height: 110%;
       }
 
       h1.middle {
         font-family: 'Droid Sans';
         color: black;
-        font-size: 600%;
+        font-size: 500%;
       }
 
       h1.small {
@@ -205,7 +206,7 @@
         color: black;
         font-size: 300%;
       }
-      
+
       h2 {
         font-family: 'Droid Sans';
         color: black;
@@ -213,11 +214,11 @@
         padding: 0;
         margin: 20px 0;
       }
-            
+
       h2:first-child {
         margin-top: 0;
       }
- 
+
       section, footer {
         font-family: 'Droid Sans';
         color: #3f3f3f;
@@ -226,12 +227,12 @@
         display: block;
         overflow: hidden;
       }
-      
+
       footer {
         font-size: 100%;
         margin: 20px 0 0 30px;
       }
- 
+
       a {
         color: inherit;
         display: inline-block;
@@ -239,38 +240,38 @@
         line-height: 110%;
         border-bottom: 2px solid #3f3f3f;
       }
- 
+
       ul {
         margin: 0;
         padding: 0;
       }
- 
+
       button {
         font-size: 100%;
       }
-      
+
       pre button {
         margin: 2px;
       }
-      
+
       section.left {
         float: left;
         width: 390px;
       }
-      
+
       section.small {
         font-size: 24px;
       }
-      
+
       section.small ul {
         margin: 0 0 0 15px;
         padding: 0;
       }
-      
+
       section.small li {
         padding-bottom: 0;
       }
-            
+
       section.middle {
         line-height: 2em;
         text-align: center;
@@ -279,7 +280,7 @@
         height: 700px;
         width: 900px;
       }
-      
+
       pre {
         text-align: left;
         font-family: 'Droid Sans Mono', Courier;
@@ -292,12 +293,12 @@
         border-radius: 8px;
         border: 1px solid rgba(255, 0, 0, 0.2);
       }
-      
+
       pre select {
         font-family: Monaco, Courier;
         border: 1px solid #c61800;
       }
-        
+
       input {
         font-size: 100%;
         margin-right: 10px;
@@ -307,16 +308,16 @@
       input[type="range"] {
         width: 100%;
       }
-      
+
       button {
         margin: 20px 10px 0 0;
         font-family: Verdana;
       }
-      
+
       button.large {
         font-size: 32px;
       }
-        
+
       pre b {
         font-weight: normal;
         color: #c61800;
@@ -334,7 +335,7 @@
         cursor: pointer;
         width: auto;
       }
-      
+
       div.example {
         display: block;
         padding: 10px 20px;
@@ -380,7 +381,7 @@
         font-size: 150%;
         line-height:100%;
       }
-      
+
       video {
         -moz-border-radius: 8px;
         -khtml-border-radius: 8px;
@@ -388,7 +389,7 @@
         border-radius: 8px;
         border: 1px solid rgba(0, 0, 0, 0.2);
       }
-      
+
       .key {
         font-family: 'Droid Sans';
         color: black;
@@ -410,29 +411,29 @@
         -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
         -o-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
       }
-      
+
       .key { font-family: Arial; }
-      
+
       :not(header) > .key {
         margin: 0 5px;
         bottom: 4px;
       }
- 
+
       .two-column {
         -webkit-column-count: 2;
         -moz-column-count: 2;
         column-count: 2;
       }
- 
+
       .stroke {
         -webkit-text-stroke-color: red;
         -webkit-text-stroke-width: 1px;
       } /* currently webkit-only */
-      
+
       .center {
         text-align: center;
       }
-      
+
       #presentation-counter {
         color: #ccc;
         font-size: 70%;
@@ -443,107 +444,107 @@
         width: 100%;
         text-align: center;
       }
-      
+
       div:not(.current).reduced {
         -webkit-transform: scale(0.8);
         -moz-transform: scale(0.8);
         -o-transform: scale(0.8);
         transform: scale(0.8);
-      } 
-      
+      }
+
       .no-transitions {
         -webkit-transition: none;
         -moz-transition: none;
         -o-transition: none;
         transition: none;
       }
- 
+
       .no-gradients {
         background: none;
         background-color: #fff;
       }
-      
+
       ul.bulleted {
         padding-left: 30px;
       }
-      
-    </style> 
-    
-  </head> 
-  <body> 
-    <div class="presentation"> 
-      <div id="presentation-counter"></div> 
-      <div class="slides"> 
-        <div class="slide"> 
-          <section class="middle"> 
-          <h1 class="large">Vala 幼幼班</h1> 
-          </section> 
-        </div> 
 
-        <div class="slide"> 
-          <section class="middle"> 
-          <h1 class="large">自我介紹</h1> 
-          </section> 
-        </div> 
+    </style>
 
-        <div class="slide"> 
-          <section class="middle"> 
-          <h1 class="large">本名</h1> 
-          </section> 
-        </div> 
+  </head>
+  <body>
+    <div class="presentation">
+      <div id="presentation-counter"></div>
+      <div class="slides">
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">Vala 幼幼班</h1>
+          </section>
+        </div>
 
-        <div class="slide"> 
-          <section class="middle"> 
-          <h1 class="large">李世元</h1> 
-          </section> 
-        </div> 
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">自我介紹</h1>
+          </section>
+        </div>
 
-        <div class="slide"> 
-          <section class="middle"> 
-          <h1 class="large">不重要</h1> 
-          </section> 
-        </div> 
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">本名</h1>
+          </section>
+        </div>
 
-        <div class="slide"> 
-          <section class="middle"> 
-          <h1 class="large">暱稱</h1> 
-          </section> 
-        </div> 
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">李世元</h1>
+          </section>
+        </div>
 
-        <div class="slide"> 
-          <section class="middle"> 
-          <h1 class="large">四元</h1> 
-          </section> 
-        </div> 
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">不重要</h1>
+          </section>
+        </div>
 
-        <div class="slide"> 
-          <section class="middle"> 
-          <h1 class="large">不值錢</h1> 
-          </section> 
-        </div> 
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">暱稱</h1>
+          </section>
+        </div>
 
-        <div class="slide"> 
-          <section class="middle"> 
-          <h1 class="large">其它的</h1> 
-          </section> 
-        </div> 
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">四元</h1>
+          </section>
+        </div>
 
-        <div class="slide"> 
-          <section class="middle"> 
-          <h1 class="small">http://about.me/fourdollars</h1> 
-          </section> 
-        </div> 
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">不值錢</h1>
+          </section>
+        </div>
 
-        <div class="slide"> 
-          <section class="middle"> 
-          <h1 class="middle">Vala 是什麼？</h1> 
-          </section> 
-        </div> 
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">其它的</h1>
+          </section>
+        </div>
 
-        <div class="slide"> 
-          <section class="middle"> 
+        <div class="slide">
+          <section class="middle">
+          <h1 class="small">http://about.me/fourdollars</h1>
+          </section>
+        </div>
 
-        <div class="code-large"> 
+        <div class="slide">
+          <section class="middle">
+          <h1 class="middle">Vala 是什麼？</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+
+        <div class="code-large">
 <font color="#8080ff">/*</font><font color="#8080ff">&nbsp;hello.vala </font><font color="#8080ff">*/</font><br>
 <br>
 <font color="#00ff00">void</font>&nbsp;main () {<br>
@@ -551,18 +552,18 @@
 }<br>
 </font>
       </div>
-          </section> 
-        </div> 
+          </section>
+        </div>
 
-        <div class="slide"> 
-          <section class="middle"> 
-          <h1 class="large">變成</h1> 
-          </section> 
-        </div> 
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">變成</h1>
+          </section>
+        </div>
 
-        <div class="slide"> 
-          <section class="middle"> 
-        <div class="code"> 
+        <div class="slide">
+          <section class="middle">
+        <div class="code">
  <font color="#8080ff">/*</font><font color="#8080ff">&nbsp;hello.c </font><font color="#8080ff">*/</font><br>
 <br>
 <font color="#ff40ff">#include </font><font color="#ff6060">&lt;glib.h&gt;</font><br>
@@ -580,51 +581,217 @@
 &nbsp;&nbsp;&nbsp;&nbsp;_vala_main ();<br>
 &nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">return</font>&nbsp;<font color="#ff6060">0</font>;<br>
 }<br>
-</font>       
+</font>
       </div>
-          </section> 
-        </div> 
+          </section>
+        </div>
 
-        <div class="slide"> 
-          <section class="middle"> 
-            <h2> 
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">Vala → C</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">Vala 程式碼</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">被轉譯成</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">C 的程式碼</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">然後</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="middle">GCC 編譯成執行檔</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">沒了</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="middle">Vala 就是這樣</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">只不過...</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="middle">Vala 也常常被說成</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="small">GObject 型別系統的編譯器</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="middle">GObject 是什麼？</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="middle">用 C 實作的 OOP</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="small">OOP = Object Oriented Programming</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="middle">物件導向程式設計</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">蝦咪！</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="middle">C 也可以 OOP</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">沒錯！</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="middle">Vala 也可以 OOP</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+        <div class="code">
+<font color="#8080ff">/*</font><font color="#8080ff">&nbsp;MyObject.vala </font><font color="#8080ff">*/</font><br>
+<br>
+<font color="#00ff00">class</font>&nbsp;MyObject : GLib.Object {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">static</font>&nbsp;<font color="#00ff00">int</font>&nbsp;main(<font color="#00ff00">string</font>[] args) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;Hello World</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">return</font>&nbsp;<font color="#ff6060">0</font>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}<br>
+</font>
+        </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="small">$ valac MyObject.vala</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="small">產生 MyObject 執行檔</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="small">$ valac -C MyObject.vala</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="small">產生 MyObject.c 原始碼</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="small">$ valac -H MyObject.h MyObject.vala</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="small">產生 MyObject.h 標頭檔</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <h2>
               Attached Events
-            </h2> 
-            <ul> 
-              <li>[arrow keys] to go next and previous</p></li> 
-              <li>[mouse scroll wheel] to go next and previous</p></li> 
-              <li>[Ctrl or Command] + [+/-] to zoom in and out</p></li> 
-              <li>[touch gestures] for mobile devices</p></li> 
-            </ul> 
-          </section> 
-        </div> 
- 
-        <div class="slide"> 
-          <section class="middle"> 
-            <h2> 
+            </h2>
+            <ul>
+              <li>[arrow keys] to go next and previous</p></li>
+              <li>[mouse scroll wheel] to go next and previous</p></li>
+              <li>[Ctrl or Command] + [+/-] to zoom in and out</p></li>
+              <li>[touch gestures] for mobile devices</p></li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <h2>
               Options
-            </h2> 
-            <ul> 
-              <li><input type="checkbox" id="toggle-size" /><label for="toggle-size"><span>Grow</span></label></li> 
-              <li><input type="checkbox" id="toggle-transitions" checked /><label for="toggle-transitions"><span>Transitions</span></label></li> 
-              <li><input type="checkbox" id="toggle-gradients" checked /><label for="toggle-gradients"><span>Gradients</span></label></li> 
-              <li><input type="checkbox" id="toggle-counter" checked /><label for="toggle-counter"><span>Slide numbers</span></label></li> 
-            </ul> 
-          </section> 
-        </div> 
- 
-        <div class="slide"> 
-          <section> 
-            <header> 
-              <h2>Placeholder content</h2> 
-            </header> 
+            </h2>
+            <ul>
+              <li><input type="checkbox" id="toggle-size" /><label for="toggle-size"><span>Grow</span></label></li>
+              <li><input type="checkbox" id="toggle-transitions" checked /><label for="toggle-transitions"><span>Transitions</span></label></li>
+              <li><input type="checkbox" id="toggle-gradients" checked /><label for="toggle-gradients"><span>Gradients</span></label></li>
+              <li><input type="checkbox" id="toggle-counter" checked /><label for="toggle-counter"><span>Slide numbers</span></label></li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section>
+            <header>
+              <h2>Placeholder content</h2>
+            </header>
 <pre>// some sample code
 &lt;canvas id="canvas" width="838" height="220"&gt;&lt;/canvas&gt;
- 
+
 &lt;script&gt;
   var canvasContext = document.getElementById("canvas").<b>getContext</b>("2d");
   canvasContext.<b>fillRect</b>(250, 25, 150, 100);
- 
+
   canvasContext.<b>beginPath</b>();
   canvasContext.<b>arc</b>(450, 110, 100, Math.PI * 1/2, Math.PI * 3/2);
   canvasContext.<b>lineWidth</b> = 15;
@@ -632,36 +799,36 @@
   canvasContext.<b>strokeStyle</b> = 'rgba(255, 127, 0, 0.5)';
   canvasContext.<b>stroke</b>();
 &lt;/script&gt;
-</pre> 
-            <ul class="bulleted"> 
-              <li>point 1</li> 
-              <li>point 2</li> 
-              <li>point 3</li> 
-            </ul> 
-          </section> 
-        </div> 
- 
-      </div> <!-- slides --> 
- 
-    </div> <!-- presentation --> 
- 
-    <script> 
+</pre>
+            <ul class="bulleted">
+              <li>point 1</li>
+              <li>point 2</li>
+              <li>point 3</li>
+            </ul>
+          </section>
+        </div>
+
+      </div> <!-- slides -->
+
+    </div> <!-- presentation -->
+
+    <script>
       (function() {
         var doc = document;
         var disableBuilds = true;
- 
+
         var ctr = 0;
         var spaces = /\s+/, a1 = [''];
- 
+
         var toArray = function(list) {
           return Array.prototype.slice.call(list || [], 0);
         };
- 
+
         var byId = function(id) {
           if (typeof id == 'string') { return doc.getElementById(id); }
           return id;
         };
- 
+
         var query = function(query, root) {
           if (!query) { return []; }
           if (typeof query != 'string') { return toArray(query); }
@@ -669,11 +836,11 @@
             root = byId(root);
             if(!root){ return []; }
           }
- 
+
           root = root || document;
           var rootIsDoc = (root.nodeType == 9);
           var doc = rootIsDoc ? root : (root.ownerDocument || document);
- 
+
           // rewrite the query to be ID rooted
           if (!rootIsDoc || ('>~+'.indexOf(query.charAt(0)) >= 0)) {
             root.id = root.id || ('qUnique' + (ctr++));
@@ -681,10 +848,10 @@
           }
           // don't choke on something like ".yada.yada >"
           if ('>~+'.indexOf(query.slice(-1)) >= 0) { query += ' *'; }
- 
+
           return toArray(doc.querySelectorAll(query));
         };
- 
+
         var strToArray = function(s) {
           if (typeof s == 'string' || s instanceof String) {
             if (s.indexOf(' ') < 0) {
@@ -696,7 +863,7 @@
           }
           return s;
         };
- 
+
         var addClass = function(node, classStr) {
           classStr = strToArray(classStr);
           var cls = ' ' + node.className + ' ';
@@ -708,7 +875,7 @@
           }
           node.className = cls.trim();
         };
- 
+
         var removeClass = function(node, classStr) {
           var cls;
           if (classStr !== undefined) {
@@ -725,7 +892,7 @@
             node.className = cls;
           }
         };
- 
+
         var toggleClass = function(node, classStr) {
           var cls = ' ' + node.className + ' ';
           if (cls.indexOf(' ' + classStr.trim() + ' ') >= 0) {
@@ -734,20 +901,20 @@
             addClass(node, classStr);
           }
         };
- 
+
         var ua = navigator.userAgent;
         var isFF = parseFloat(ua.split('Firefox/')[1]) || undefined;
         var isWK = parseFloat(ua.split('WebKit/')[1]) || undefined;
         var isOpera = parseFloat(ua.split('Opera/')[1]) || undefined;
- 
+
         var canTransition = (function() {
           var ver = parseFloat(ua.split('Version/')[1]) || undefined;
           // test to determine if this browser can handle CSS transitions.
-          var cachedCanTransition = 
+          var cachedCanTransition =
             (isWK || (isFF && isFF > 3.6 ) || (isOpera && ver >= 10.5));
           return function() { return cachedCanTransition; }
         })();
- 
+
         //
         // Slide class
         //
@@ -762,7 +929,7 @@
           this._makeCounter();
           this._makeBuildList();
         };
- 
+
         Slide.prototype = {
           _node: null,
           _count: 0,
@@ -783,7 +950,7 @@
             removeClass(this._node, this._states);
             addClass(this._node, state);
             this._currentState = state;
- 
+
             // delay first auto run. Really wish this were in CSS.
             /*
             this._runAutos();
@@ -848,7 +1015,7 @@
             return true;
           },
         };
- 
+
         //
         // SlideShow class
         //
@@ -856,35 +1023,35 @@
           this._slides = (slides || []).map(function(el, idx) {
             return new Slide(el, idx);
           });
- 
+
           var h = window.location.hash;
           try {
             this.current = parseInt(h.split('#slide')[1], 10);
           }catch (e) { /* squeltch */ }
           this.current = isNaN(this.current) ? 1 : this.current;
           var _t = this;
-          doc.addEventListener('keydown', 
+          doc.addEventListener('keydown',
               function(e) { _t.handleKeys(e); }, false);
-          doc.addEventListener('mousewheel', 
+          doc.addEventListener('mousewheel',
               function(e) { _t.handleWheel(e); }, false);
-          doc.addEventListener('DOMMouseScroll', 
+          doc.addEventListener('DOMMouseScroll',
               function(e) { _t.handleWheel(e); }, false);
-          doc.addEventListener('touchstart', 
+          doc.addEventListener('touchstart',
               function(e) { _t.handleTouchStart(e); }, false);
-          doc.addEventListener('touchend', 
+          doc.addEventListener('touchend',
               function(e) { _t.handleTouchEnd(e); }, false);
-          window.addEventListener('popstate', 
+          window.addEventListener('popstate',
               function(e) { _t.go(e.state); }, false);
-          this._update();          
+          this._update();
         };
- 
+
         SlideShow.prototype = {
           _slides: [],
           _update: function(dontPush) {
-            
+
             // catch to set things right on the initial load. popstate fires on pageload.
             if (this.current === null) return;
-            
+
             document.querySelector('#presentation-counter').innerText = this.current;
             if (history.pushState) {
               if (!dontPush) {
@@ -899,7 +1066,7 @@
               }
             }
           },
- 
+
           current: 0,
           next: function() {
             if (!this._slides[this.current-1].buildNext()) {
@@ -918,7 +1085,7 @@
             this.current = num;
             this._update(true);
           },
- 
+
           _notesOn: false,
           showNotes: function() {
             var isOn = this._notesOn = !this._notesOn;
@@ -939,7 +1106,7 @@
             } else if (e.detail) {
               delta = -e.detail/3;
             }
- 
+
             if (delta > 0 ) {
               this.prev();
               return;
@@ -980,7 +1147,7 @@
             }
           },
         };
- 
+
         // Initialize
         var slideshow = new SlideShow(query('.slide'));
 
@@ -988,16 +1155,16 @@
         document.querySelector('#toggle-size').addEventListener('click', toggleSize, false);
         document.querySelector('#toggle-transitions').addEventListener('click', toggleTransitions, false);
         document.querySelector('#toggle-gradients').addEventListener('click', toggleGradients, false);
- 
+
         var counters = document.querySelectorAll('.counter');
         var slides = document.querySelectorAll('.slide');
- 
+
         function toggleCounter() {
           toArray(counters).forEach(function(el) {
             el.style.display = (el.offsetHeight) ? 'none' : 'block';
           });
         }
-        
+
         function toggleSize() {
           toArray(slides).forEach(function(el) {
             if (!/reduced/.test(el.className)) {
@@ -1008,7 +1175,7 @@
             }
           });
         }
- 
+
         function toggleTransitions() {
           toArray(slides).forEach(function(el) {
             if (!/no-transitions/.test(el.className)) {
@@ -1019,7 +1186,7 @@
             }
           });
         }
-        
+
         function toggleGradients() {
           toArray(slides).forEach(function(el) {
             if (!/no-gradients/.test(el.className)) {
@@ -1031,14 +1198,14 @@
           });
         }
       })();
-    </script> 
- 
+    </script>
+
     <!--[if lt IE 9]>
-    <script 
+    <script
       src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">
     </script>
     <script>CFInstall.check({ mode: "overlay" });</script>
-    <![endif]--> 
-    
-  </body> 
+    <![endif]-->
+
+  </body>
 </html>
