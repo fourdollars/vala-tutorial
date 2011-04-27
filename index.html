@@ -594,7 +594,7 @@
 <font color="#00ff00">int</font>&nbsp;main (<font color="#00ff00">int</font>&nbsp;argc, <font color="#00ff00">char</font>&nbsp;** argv) {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;g_type_init ();<br>
 &nbsp;&nbsp;&nbsp;&nbsp;_vala_main ();<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">return</font>&nbsp;<font color="#ff6060">0</font>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">return</font>&nbsp;<font color="#ff6060">0</font>;<br>
 }
       </div>
           </section>
@@ -722,7 +722,7 @@
 <font color="#00ff00">public</font>&nbsp;<font color="#00ff00">class</font>&nbsp;MyObject : GLib.Object {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">static</font>&nbsp;<font color="#00ff00">int</font>&nbsp;main(<font color="#00ff00">string</font>[] args) {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;Hello World</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">return</font>&nbsp;<font color="#ff6060">0</font>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">return</font>&nbsp;<font color="#ff6060">0</font>;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;}<br>
 }
         </div>
@@ -906,7 +906,7 @@
         <div class="slide">
           <section class="middle">
             <div class="x-code">
-<font color="#00ff00">int</font>[] a = <font color="#ffff00">new</font>&nbsp;<font color="#00ff00">int</font>[<font color="#ff6060">10</font>];<br>
+<font color="#00ff00">int</font>[] a = <font color="orange">new</font>&nbsp;<font color="#00ff00">int</font>[<font color="#ff6060">10</font>];<br>
 <font color="#00ff00">int</font>[] b = { <font color="#ff6060">2</font>, <font color="#ff6060">4</font>, <font color="#ff6060">6</font>, <font color="#ff6060">8</font>&nbsp;};<br>
 <br>
 <font color="#00ff00">int</font>[] c = b[<font color="#ff6060">1</font>:<font color="#ff6060">3</font>];<br>
@@ -924,7 +924,7 @@
         <div class="slide">
           <section class="middle">
             <div class="x-code">
-<font color="#00ff00">int</font>[,] c = <font color="#ffff00">new</font>&nbsp;<font color="#00ff00">int</font>[<font color="#ff6060">3</font>,<font color="#ff6060">4</font>];<br>
+<font color="#00ff00">int</font>[,] c = <font color="orange">new</font>&nbsp;<font color="#00ff00">int</font>[<font color="#ff6060">3</font>,<font color="#ff6060">4</font>];<br>
 <font color="#00ff00">int</font>[,] d = {{<font color="#ff6060">2</font>, <font color="#ff6060">4</font>, <font color="#ff6060">6</font>, <font color="#ff6060">8</font>},<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<font color="#ff6060">3</font>, <font color="#ff6060">5</font>, <font color="#ff6060">7</font>, <font color="#ff6060">9</font>},<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<font color="#ff6060">1</font>, <font color="#ff6060">3</font>, <font color="#ff6060">5</font>, <font color="#ff6060">7</font>}};<br>
@@ -1047,7 +1047,7 @@ stdout.printf(<font color="#ff6060">&quot;%d %g %s</font><font color="#ff40ff">\
             <div class="code">
 <font color="#00ff00">string</font>&nbsp;family = <font color="#ff6060">&quot;溫瑞凡 謝安真 溫雨萌 黎薇恩&quot;</font>;<br>
 <br>
-<font color="#ffff00">if</font>&nbsp;(<font color="#ff6060">&quot;黎薇恩&quot;</font>&nbsp;<font color="#ffff00">in</font>&nbsp;family) {<br>
+<font color="orange">if</font>&nbsp;(<font color="#ff6060">&quot;黎薇恩&quot;</font>&nbsp;<font color="orange">in</font>&nbsp;family) {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;家裡有小三</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
 }<br>
 <br>
@@ -1057,8 +1057,8 @@ stdout.printf(<font color="#ff6060">&quot;%d %g %s</font><font color="#ff40ff">\
 &nbsp;&nbsp;&nbsp;&nbsp;<font color="#ff6060">&quot;溫雨萌&quot;</font>,<br>
 &nbsp;&nbsp;&nbsp;&nbsp;<font color="#ff6060">&quot;黎薇恩&quot;</font>};<br>
 <br>
-<font color="#ffff00">foreach</font>&nbsp;(<font color="#00ff00">string</font>&nbsp;person <font color="#ffff00">in</font>&nbsp;people) {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">if</font>&nbsp;(person == <font color="#ff6060">&quot;黎薇恩&quot;</font>) {<br>
+<font color="orange">foreach</font>&nbsp;(<font color="#00ff00">string</font>&nbsp;person <font color="orange">in</font>&nbsp;people) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">if</font>&nbsp;(person == <font color="#ff6060">&quot;黎薇恩&quot;</font>) {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;找到小三</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
 &nbsp;&nbsp;&nbsp;&nbsp;}<br>
 }
@@ -1074,20 +1074,20 @@ stdout.printf(<font color="#ff6060">&quot;%d %g %s</font><font color="#ff40ff">\
 
         <div class="slide">
           <section class="middle">
-          <h1 class="large"><font color="yellow">var</font> foo = ...</h1>
+          <h1 class="large"><font color="orange">var</font> foo = ...</h1>
           </section>
         </div>
 
         <div class="slide">
           <section class="middle">
             <div class="code">
-<font color="#ffff00">var</font>&nbsp;p = <font color="#ffff00">new</font>&nbsp;Person();<br>
+<font color="orange">var</font>&nbsp;p = <font color="orange">new</font>&nbsp;Person();<br>
 <font color="#8080ff">// same as: Person p = new Person();</font><br>
-<font color="#ffff00">var</font>&nbsp;s = <font color="#ff6060">&quot;hello&quot;</font>;<br>
+<font color="orange">var</font>&nbsp;s = <font color="#ff6060">&quot;hello&quot;</font>;<br>
 <font color="#8080ff">// same as: string s = &quot;hello&quot;;</font><br>
-<font color="#ffff00">var</font>&nbsp;l = <font color="#ffff00">new</font>&nbsp;List&lt;<font color="#00ff00">int</font>&gt;();<br>
+<font color="orange">var</font>&nbsp;l = <font color="orange">new</font>&nbsp;List&lt;<font color="#00ff00">int</font>&gt;();<br>
 <font color="#8080ff">// same as: List&lt;int&gt; l = new List&lt;int&gt;();</font><br>
-<font color="#ffff00">var</font>&nbsp;i = <font color="#ff6060">10</font>;<br>
+<font color="orange">var</font>&nbsp;i = <font color="#ff6060">10</font>;<br>
 <font color="#8080ff">// same as: int i = 10;</font>
             </div>
           </section>
@@ -1181,7 +1181,7 @@ stdout.printf(<font color="#ff6060">&quot;Hello, %s!</font><font color="#ff40ff"
         <div class="slide">
           <section class="middle">
             <div class="x-code">
-<font color="#ffff00">while</font>&nbsp;(a &gt; b) {<br>
+<font color="orange">while</font>&nbsp;(a &gt; b) {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;a--;<br>
 }:
             </div>
@@ -1191,9 +1191,9 @@ stdout.printf(<font color="#ff6060">&quot;Hello, %s!</font><font color="#ff40ff"
         <div class="slide">
           <section class="middle">
             <div class="x-code">
-<font color="#ffff00">do</font>&nbsp;{<br>
+<font color="orange">do</font>&nbsp;{<br>
 &nbsp;&nbsp;&nbsp;&nbsp;a--;<br>
-} <font color="#ffff00">while</font>&nbsp;(a &gt; b);<br>
+} <font color="orange">while</font>&nbsp;(a &gt; b);<br>
 </font>
             </div>
           </section>
@@ -1202,7 +1202,7 @@ stdout.printf(<font color="#ff6060">&quot;Hello, %s!</font><font color="#ff40ff"
         <div class="slide">
           <section class="middle">
             <div class="x-code">
-<font color="#ffff00">for</font>&nbsp;(<font color="#00ff00">int</font>&nbsp;a = <font color="#ff6060">0</font>; a &lt; <font color="#ff6060">10</font>; a++) {<br>
+<font color="orange">for</font>&nbsp;(<font color="#00ff00">int</font>&nbsp;a = <font color="#ff6060">0</font>; a &lt; <font color="#ff6060">10</font>; a++) {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;%d</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>, a);<br>
 }
             </div>
@@ -1212,7 +1212,7 @@ stdout.printf(<font color="#ff6060">&quot;Hello, %s!</font><font color="#ff40ff"
         <div class="slide">
           <section class="middle">
             <div class="x-code">
-<font color="#ffff00">foreach</font>&nbsp;(<font color="#00ff00">int</font>&nbsp;a <font color="#ffff00">in</font>&nbsp;int_array) {<br>
+<font color="orange">foreach</font>&nbsp;(<font color="#00ff00">int</font>&nbsp;a <font color="orange">in</font>&nbsp;int_array) {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;%d</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>, a);<br>
 }
             </div>
@@ -1222,13 +1222,13 @@ stdout.printf(<font color="#ff6060">&quot;Hello, %s!</font><font color="#ff40ff"
         <div class="slide">
           <section class="middle">
             <div class="code">
-<font color="#ffff00">if</font>&nbsp;(a &gt; <font color="#ff6060">0</font>) {<br>
+<font color="orange">if</font>&nbsp;(a &gt; <font color="#ff6060">0</font>) {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;a is greater than 0</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
 }<br>
-<font color="#ffff00">else</font>&nbsp;<font color="#ffff00">if</font>&nbsp;(a &lt; <font color="#ff6060">0</font>) {<br>
+<font color="orange">else</font>&nbsp;<font color="orange">if</font>&nbsp;(a &lt; <font color="#ff6060">0</font>) {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;a is less than 0</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
 }<br>
-<font color="#ffff00">else</font>&nbsp;{<br>
+<font color="orange">else</font>&nbsp;{<br>
 &nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;a is equal to 0</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
 }
             </div>
@@ -1238,17 +1238,17 @@ stdout.printf(<font color="#ff6060">&quot;Hello, %s!</font><font color="#ff40ff"
         <div class="slide">
           <section class="middle">
             <div class="x-code">
-<font color="#ffff00">switch</font>&nbsp;(a) {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">case</font>&nbsp;<font color="#ff6060">1</font>:<br>
+<font color="orange">switch</font>&nbsp;(a) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">case</font>&nbsp;<font color="#ff6060">1</font>:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;one</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">break</font>;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">case</font>&nbsp;<font color="#ff6060">2</font>:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">case</font>&nbsp;<font color="#ff6060">3</font>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">break</font>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">case</font>&nbsp;<font color="#ff6060">2</font>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">case</font>&nbsp;<font color="#ff6060">3</font>:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;two or three</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">break</font>;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">default</font>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">break</font>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">default</font>:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;unknown</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">break</font>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">break</font>;<br>
 }
             </div>
           </section>
@@ -1270,7 +1270,7 @@ stdout.printf(<font color="#ff6060">&quot;Hello, %s!</font><font color="#ff40ff"
           <section class="middle">
             <div class="code">
 <font color="#00ff00">int</font>&nbsp;method_name(<font color="#00ff00">int</font>&nbsp;arg1, Object arg2) {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">return</font>&nbsp;<font color="#ff6060">1</font>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">return</font>&nbsp;<font color="#ff6060">1</font>;<br>
 }
             </div>
           </section>
@@ -1379,10 +1379,10 @@ f(<font color="#ff6060">2</font>, <font color="#ff6060">&quot;hi&quot;</font>, <
 &nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">delegate</font>&nbsp;<font color="#00ff00">void</font>&nbsp;DelegateType(<font color="#00ff00">int</font>&nbsp;a);<br>
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">static</font>&nbsp;<font color="#00ff00">int</font>&nbsp;main(<font color="#00ff00">string</font>[] args) {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Foo foo = <font color="#ffff00">new</font>&nbsp;Foo();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Foo foo = <font color="orange">new</font>&nbsp;Foo();<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DelegateType d1 = foo.f1;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d1(<font color="#ff6060">10</font>);<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">return</font>&nbsp;<font color="#ff6060">0</font>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">return</font>&nbsp;<font color="#ff6060">0</font>;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;}<br>
 }
             </div>
@@ -1435,9 +1435,9 @@ f(<font color="#ff6060">2</font>, <font color="#ff6060">&quot;hi&quot;</font>, <
 &nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">int</font>[] data = { <font color="#ff6060">3</font>, <font color="#ff6060">9</font>, <font color="#ff6060">2</font>, <font color="#ff6060">7</font>, <font color="#ff6060">5</font>&nbsp;};<br>
 &nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">// An anonymous method is passed as the second argument:</font><br>
 &nbsp;&nbsp;&nbsp;&nbsp;my_sorting_algorithm(data, (a, b) =&gt; {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">if</font>&nbsp;(a &lt; b) <font color="#ffff00">return</font>&nbsp;-<font color="#ff6060">1</font>;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">if</font>&nbsp;(a &gt; b) <font color="#ffff00">return</font>&nbsp;<font color="#ff6060">1</font>;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">return</font>&nbsp;<font color="#ff6060">0</font>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">if</font>&nbsp;(a &lt; b) <font color="orange">return</font>&nbsp;-<font color="#ff6060">1</font>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">if</font>&nbsp;(a &gt; b) <font color="orange">return</font>&nbsp;<font color="#ff6060">1</font>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">return</font>&nbsp;<font color="#ff6060">0</font>;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;});<br>
 }
             </div>
@@ -1450,7 +1450,7 @@ f(<font color="#ff6060">2</font>, <font color="#ff6060">&quot;hi&quot;</font>, <
 <font color="#00ff00">delegate</font>&nbsp;<font color="#00ff00">int</font>&nbsp;IntOperation(<font color="#00ff00">int</font>&nbsp;i);<br>
 <br>
 IntOperation curried_add(<font color="#00ff00">int</font>&nbsp;a) {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">return</font>&nbsp;(b) =&gt; a + b;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">return</font>&nbsp;(b) =&gt; a + b;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">// 'a' is an outer variable</font><br>
 }<br>
 <br>
@@ -1481,7 +1481,7 @@ IntOperation curried_add(<font color="#00ff00">int</font>&nbsp;a) {<br>
         <div class="slide">
           <section class="middle">
             <div class="x-code">
-<font color="#ffff00">using</font>&nbsp;NameSpaceName;<br>
+<font color="orange">using</font>&nbsp;NameSpaceName;<br>
 <br>
 <font color="#8080ff">// ...</font>
             </div>
@@ -1509,10 +1509,10 @@ IntOperation curried_add(<font color="#00ff00">int</font>&nbsp;a) {<br>
             <div class="code">
 <font color="#8080ff">// main.vala</font><br>
 <br>
-<font color="#ffff00">using</font>&nbsp;Foo;<br>
+<font color="orange">using</font>&nbsp;Foo;<br>
 <br>
 <font color="#00ff00">void</font>&nbsp;main () {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">var</font>&nbsp;bar = <font color="#ffff00">new</font>&nbsp;Bar();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">var</font>&nbsp;bar = <font color="orange">new</font>&nbsp;Bar();<br>
 &nbsp;&nbsp;&nbsp;&nbsp;bar.blah();<br>
 }
             </div>
@@ -1525,7 +1525,7 @@ IntOperation curried_add(<font color="#00ff00">int</font>&nbsp;a) {<br>
 <font color="#8080ff">// main.vala</font><br>
 <br>
 <font color="#00ff00">void</font>&nbsp;main () {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">var</font>&nbsp;bar = <font color="#ffff00">new</font>&nbsp;Foo.Bar();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">var</font>&nbsp;bar = <font color="orange">new</font>&nbsp;Foo.Bar();<br>
 &nbsp;&nbsp;&nbsp;&nbsp;bar.blah();<br>
 }
             </div>
@@ -1573,8 +1573,8 @@ Color c3 = Color() {<br>
 };<br>
 <br>
 <font color="#8080ff">// with type inference</font><br>
-<font color="#ffff00">var</font>&nbsp;c4 = Color();<br>
-<font color="#ffff00">var</font>&nbsp;c5 = Color() {<br>
+<font color="orange">var</font>&nbsp;c4 = Color();<br>
+<font color="orange">var</font>&nbsp;c5 = Color() {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;red = <font color="#ff6060">0.5</font>,<br>
 &nbsp;&nbsp;&nbsp;&nbsp;green = <font color="#ff6060">0.5</font>,<br>
 &nbsp;&nbsp;&nbsp;&nbsp;blue = <font color="#ff6060">1.0</font><br>
@@ -1584,7 +1584,7 @@ Color c3 = Color() {<br>
         </div>
         <div class="slide">
           <section class="middle">
-          <h1 class="large"><font color="blue">類別 Class</font></h1>
+          <h1 class="large"><font color="red">類別 Class</font></h1>
           </section>
         </div>
 
@@ -1599,7 +1599,264 @@ Color c3 = Color() {<br>
 
         <div class="slide">
           <section class="middle">
-          <h1 class="large"><font color="blue">介面 Interface</font></h1>
+            <div class="code">
+<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">class</font>&nbsp;TestClass : GLib.Object {<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">/*</font><font color="#8080ff">&nbsp;Fields </font><font color="#8080ff">*/</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">int</font>&nbsp;first_data = <font color="#ff6060">0</font>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">private</font>&nbsp;<font color="#00ff00">int</font>&nbsp;second_data;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">/*</font><font color="#8080ff">&nbsp;Constructor </font><font color="#8080ff">*/</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;TestClass() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">this</font>.second_data = <font color="#ff6060">5</font>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">/*</font><font color="#8080ff">&nbsp;Method </font><font color="#8080ff">*/</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">int</font>&nbsp;method_1() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;private data: %d&quot;</font>, <font color="orange">this</font>.second_data);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">return</font>&nbsp;<font color="orange">this</font>.second_data;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="blue">存取修飾字</font><h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="middle">完全開放 <font color="green">public</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="middle">預設私有 <font color="green">private</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="middle">保護家人 <font color="green">protected</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="middle">內部限定 <font color="green">internal</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="blue">建構子</font><h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="s-code">
+<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">class</font>&nbsp;Button : Object {<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;Button() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;Button.with_label(<font color="#00ff00">string</font>&nbsp;label) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;Button.from_stock(<font color="#00ff00">string</font>&nbsp;stock_id) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="orange">new</font>&nbsp;Button();<br>
+<font color="orange">new</font>&nbsp;Button.with_label(<font color="#ff6060">&quot;Click me&quot;</font>);<br>
+<font color="orange">new</font>&nbsp;Button.from_stock(Gtk.STOCK_OK);
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="s-code">
+<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">class</font>&nbsp;Point : Object {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">double</font>&nbsp;x;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">double</font>&nbsp;y;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;Point(<font color="#00ff00">double</font>&nbsp;x, <font color="#00ff00">double</font>&nbsp;y) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">this</font>.x = x;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">this</font>.y = y;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;Point.rectangular(<font color="#00ff00">double</font>&nbsp;x, <font color="#00ff00">double</font>&nbsp;y) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">this</font>(x, y);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;Point.polar(<font color="#00ff00">double</font>&nbsp;radius, <font color="#00ff00">double</font>&nbsp;angle) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">this</font>.rectangular(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;radius * Math.cos(angle),<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;radius * Math.sin(angle));<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}<br>
+<br>
+<font color="#00ff00">void</font>&nbsp;main() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">var</font>&nbsp;p1 = <font color="orange">new</font>&nbsp;Point.rectangular(<font color="#ff6060">5.7</font>, <font color="#ff6060">1.2</font>);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">var</font>&nbsp;p2 = <font color="orange">new</font>&nbsp;Point.polar(<font color="#ff6060">5.7</font>, <font color="#ff6060">1.2</font>);<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="blue">解構子</font><h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#00ff00">class</font>&nbsp;Demo : GLib.Object {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;~Demo() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;in destructor&quot;</font>);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="blue">信號</font><h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">class</font>&nbsp;Test : GLib.Object {<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">signal</font>&nbsp;<font color="#00ff00">void</font>&nbsp;sig_1(<font color="#00ff00">int</font>&nbsp;a);<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">static</font>&nbsp;<font color="#00ff00">int</font>&nbsp;main(<font color="#00ff00">string</font>[] args) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Test t1 = <font color="orange">new</font>&nbsp;Test();<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t1.sig_1.connect((t, a) =&gt; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;%d</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>, a);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t1.sig_1(<font color="#ff6060">5</font>);<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">return</font>&nbsp;<font color="#ff6060">0</font>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="blue">屬性</font><h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#00ff00">class</font>&nbsp;Person : GLib.Object {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">private</font>&nbsp;<font color="#00ff00">int</font>&nbsp;age = <font color="#ff6060">32</font>;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">int</font>&nbsp;get_age() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">return</font>&nbsp;<font color="orange">this</font>.age;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">void</font>&nbsp;set_age(<font color="#00ff00">int</font>&nbsp;age) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">this</font>.age = age;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}
+            </div>
+            <div class="code">
+<font color="orange">var</font>&nbsp;alice = <font color="orange">new</font>&nbsp;Person();<br>
+alice.set_age(alice.get_age() + <font color="#ff6060">1</font>);
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#00ff00">class</font>&nbsp;Person : GLib.Object {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">private</font>&nbsp;<font color="#00ff00">int</font>&nbsp;_age = <font color="#ff6060">32</font>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">// underscore prefix to avoid name clash with property</font><br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">/*</font><font color="#8080ff">&nbsp;Property </font><font color="#8080ff">*/</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">int</font>&nbsp;age {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">get</font>&nbsp;{ <font color="orange">return</font>&nbsp;_age; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">set</font>&nbsp;{ _age = <font color="orange">value</font>; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}
+            </div>
+            <div class="x-code">
+<font color="orange">var</font>&nbsp;alice = <font color="orange">new</font>&nbsp;Person();<br>
+alice.age = alice.age + <font color="#ff6060">1</font>;<br>
+<font color="#8080ff">// or even shorter:</font><br>
+alice.age++;
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="s-code">
+<font color="#00ff00">class</font>&nbsp;Person : GLib.Object {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">/*</font><font color="#8080ff">&nbsp;Property with standard getter and setter and default value </font><font color="#8080ff">*/</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">int</font>&nbsp;age { <font color="orange">get</font>; <font color="orange">set</font>; <font color="orange">default</font>&nbsp;= <font color="#ff6060">32</font>; }<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+obj.notify.connect((s, p) =&gt; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;Property '%s' has changed!</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>, p.name);<br>
+});
+            </div>
+            <div class="code">
+alice.notify[<font color="#ff6060">&quot;age&quot;</font>].connect((s, p) =&gt; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;age has changed</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
+});
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="s-code">
+<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">class</font>&nbsp;MyObject : Object {<br>
+<font color="#ff40ff">&nbsp;&nbsp;&nbsp;&nbsp;[CCode(notify = false)]</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">// notify signal is NOT emitted upon changes in the property</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">int</font>&nbsp;without_notification { <font color="orange">get</font>; <font color="orange">set</font>; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">// notify signal is emitted upon changes in the property</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">int</font>&nbsp;with_notification { <font color="orange">get</font>; <font color="orange">set</font>; }<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="red">介面 Interface</font></h1>
           </section>
         </div>
 
