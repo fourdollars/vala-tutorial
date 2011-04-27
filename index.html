@@ -754,12 +754,6 @@
 
         <div class="slide">
           <section class="middle">
-          <h1 class="large"><font color="blue">基本變數</font></h1>
-          </section>
-        </div>
-
-        <div class="slide">
-          <section class="middle">
         <div class="code">
 <font color="#8080ff">/*</font><font color="#8080ff">&nbsp;atomic types </font><font color="#8080ff">*/</font><br>
 <font color="#00ff00">unichar</font>&nbsp;c = <font color="#ff6060">'字'</font>;<br>
@@ -779,6 +773,12 @@
 &nbsp;&nbsp;&nbsp;&nbsp;TOPLEVEL,<br>
 &nbsp;&nbsp;&nbsp;&nbsp;POPUP<br>
 }
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="blue">基本變數</font></h1>
           </section>
         </div>
 
@@ -838,6 +838,18 @@
 
         <div class="slide">
           <section class="middle">
+          <h1 class="middle"><b>字串</b>: string</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="blue">自訂變數</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
           <h1 class="middle"><b>資料結構</b>: struct</h1>
           </section>
         </div>
@@ -845,6 +857,12 @@
         <div class="slide">
           <section class="middle">
           <h1 class="middle"><b>列舉值</b>: enum</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="middle"><b>物件</b>: class</h1>
           </section>
         </div>
 
@@ -978,7 +996,7 @@ d[<font color="#ff6060">2</font>,<font color="#ff6060">3</font>] = <font color="
 
         <div class="slide">
           <section class="middle">
-          <h1 class="middle">標準輸入輸出</h1>
+          <h1 class="middle">標準輸出輸入</h1>
           </section>
         </div>
 
@@ -1025,18 +1043,6 @@ stdout.printf(<font color="#ff6060">&quot;%d %g %s</font><font color="#ff40ff">\
 
         <div class="slide">
           <section class="middle">
-          <h1 class="x-large"><font color="blue">物件</font></h1>
-          </section>
-        </div>
-
-        <div class="slide">
-          <section class="middle">
-          <h1 class="large">稍後</h1>
-          </section>
-        </div>
-
-        <div class="slide">
-          <section class="middle">
           <h1 class="large"><font color="blue">型別推斷</font></h1>
           </section>
         </div>
@@ -1070,7 +1076,156 @@ stdout.printf(<font color="#ff6060">&quot;%d %g %s</font><font color="#ff40ff">\
 
         <div class="slide">
           <section class="middle">
+          <h1 class="x-large">=</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">+, -, /, *, %</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="middle">+=, -=, /=, *=, %=</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">++, --</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="middle">|, ^, &, ~, |=, &=, ^=</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">&lt;&lt;, &gt;&gt;</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">&lt;&lt;=, &gt;&gt;=</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="middle">==, &lt;, &gt;, &gt;=, &lt;=, !=</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">!, &amp;&amp;, ||</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="x-large">? :</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="x-large">??</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code-large">
+stdout.printf(<font color="#ff6060">&quot;Hello, %s!</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>, name ?? <font color="#ff6060">&quot;unknown person&quot;</font>);
+            </div>
+          </section>
+        </div>
+        <div class="slide">
+          <section class="middle">
           <h1 class="large"><font color="red">控制結構</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code-large">
+<font color="#ffff00">while</font>&nbsp;(a &gt; b) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;a--;<br>
+}:
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code-large">
+<font color="#ffff00">do</font>&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;a--;<br>
+} <font color="#ffff00">while</font>&nbsp;(a &gt; b);<br>
+</font>
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code-large">
+<font color="#ffff00">for</font>&nbsp;(<font color="#00ff00">int</font>&nbsp;a = <font color="#ff6060">0</font>; a &lt; <font color="#ff6060">10</font>; a++) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;%d</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>, a);<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code-large">
+<font color="#ffff00">foreach</font>&nbsp;(<font color="#00ff00">int</font>&nbsp;a <font color="#ffff00">in</font>&nbsp;int_array) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;%d</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>, a);<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#ffff00">if</font>&nbsp;(a &gt; <font color="#ff6060">0</font>) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;a is greater than 0</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
+}<br>
+<font color="#ffff00">else</font>&nbsp;<font color="#ffff00">if</font>&nbsp;(a &lt; <font color="#ff6060">0</font>) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;a is less than 0</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
+}<br>
+<font color="#ffff00">else</font>&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;a is equal to 0</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code-large">
+<font color="#ffff00">switch</font>&nbsp;(a) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">case</font>&nbsp;<font color="#ff6060">1</font>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;one</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">break</font>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">case</font>&nbsp;<font color="#ff6060">2</font>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">case</font>&nbsp;<font color="#ff6060">3</font>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;two or three</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">break</font>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">default</font>:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;unknown</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">break</font>;<br>
+}
+            </div>
           </section>
         </div>
 
@@ -1088,19 +1243,223 @@ stdout.printf(<font color="#ff6060">&quot;%d %g %s</font><font color="#ff40ff">\
 
         <div class="slide">
           <section class="middle">
+            <div class="code">
+<font color="#00ff00">int</font>&nbsp;method_name(<font color="#00ff00">int</font>&nbsp;arg1, Object arg2) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">return</font>&nbsp;<font color="#ff6060">1</font>;<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#00ff00">void</font>&nbsp;draw(<font color="#00ff00">string</font>&nbsp;text) { }<br>
+<font color="#00ff00">void</font>&nbsp;draw(Shape shape) { }&nbsp;&nbsp;<font color="#8080ff">// not possible</font>
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#00ff00">void</font>&nbsp;draw_text(<font color="#00ff00">string</font>&nbsp;text) { }<br>
+<font color="#00ff00">void</font>&nbsp;draw_shape(Shape shape) { }
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#00ff00">void</font>&nbsp;f(<font color="#00ff00">int</font>&nbsp;x, <font color="#00ff00">string</font>&nbsp;s, <font color="#00ff00">double</font>&nbsp;z) { }<br>
+<font color="#00ff00">void</font>&nbsp;f(<font color="#00ff00">int</font>&nbsp;x, <font color="#00ff00">string</font>&nbsp;s) { f(x, s, <font color="#ff6060">0.5</font>); }&nbsp;&nbsp;<font color="#8080ff">// not possible</font><br>
+<font color="#00ff00">void</font>&nbsp;f(<font color="#00ff00">int</font>&nbsp;x) { f(x, <font color="#ff6060">&quot;hello&quot;</font>); }&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font color="#8080ff">// not possible</font>
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#00ff00">void</font>&nbsp;f(<font color="#00ff00">int</font>&nbsp;x, <font color="#00ff00">string</font>&nbsp;s = <font color="#ff6060">&quot;hello&quot;</font>, <font color="#00ff00">double</font>&nbsp;z = <font color="#ff6060">0.5</font>) { }
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code-large">
+f(<font color="#ff6060">2</font>);<br>
+f(<font color="#ff6060">2</font>, <font color="#ff6060">&quot;hi&quot;</font>);<br>
+f(<font color="#ff6060">2</font>, <font color="#ff6060">&quot;hi&quot;</font>, <font color="#ff6060">0.75</font>);<br>
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#00ff00">string</font>? method_name(<font color="#00ff00">string</font>? text, Foo? foo, Bar bar) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">// ...</font><br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
           <h1 class="large"><font color="blue">委任 Delegate</font></h1>
           </section>
         </div>
 
         <div class="slide">
           <section class="middle">
-          <h1 class="large"><font color="blue">閉包 Closures</font></h1>
+            <div class="code">
+<font color="#00ff00">delegate</font>&nbsp;<font color="#00ff00">void</font>&nbsp;DelegateType(<font color="#00ff00">int</font>&nbsp;a);
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#00ff00">delegate</font>&nbsp;<font color="#00ff00">void</font>&nbsp;DelegateType(<font color="#00ff00">int</font>&nbsp;a);<br>
+<br>
+<font color="#00ff00">void</font>&nbsp;f1(<font color="#00ff00">int</font>&nbsp;a) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;%d</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>, a);<br>
+}<br>
+<br>
+<font color="#00ff00">void</font>&nbsp;f2(DelegateType d, <font color="#00ff00">int</font>&nbsp;a) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;d(a);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">// Calling a delegate</font><br>
+}<br>
+<br>
+<font color="#00ff00">void</font>&nbsp;main() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;f2(f1, <font color="#ff6060">5</font>);<br>
+&nbsp;&nbsp;<font color="#8080ff">// Passing a method as delegate argument to another method</font><br>}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#00ff00">class</font>&nbsp;Foo {<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">void</font>&nbsp;f1(<font color="#00ff00">int</font>&nbsp;a) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;a = %d</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>, a);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">delegate</font>&nbsp;<font color="#00ff00">void</font>&nbsp;DelegateType(<font color="#00ff00">int</font>&nbsp;a);<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">static</font>&nbsp;<font color="#00ff00">int</font>&nbsp;main(<font color="#00ff00">string</font>[] args) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Foo foo = <font color="#ffff00">new</font>&nbsp;Foo();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DelegateType d1 = foo.f1;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d1(<font color="#ff6060">10</font>);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">return</font>&nbsp;<font color="#ff6060">0</font>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="blue">匿名函式 Closures</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+(a) =&gt; { stdout.printf(<font color="#ff6060">&quot;%d</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>, a); }<br>
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#00ff00">delegate</font>&nbsp;<font color="#00ff00">void</font>&nbsp;PrintIntFunc(<font color="#00ff00">int</font>&nbsp;a);<br>
+<br>
+<font color="#00ff00">void</font>&nbsp;main() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;PrintIntFunc p1 = <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(a) =&gt; { stdout.printf(<font color="#ff6060">&quot;%d</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>, a); };<br>
+&nbsp;&nbsp;&nbsp;&nbsp;p1(<font color="#ff6060">10</font>);<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">// Curly braces are optional if the body contains only one statement:</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;PrintIntFunc p2 =<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (a) =&gt; stdout.printf(<font color="#ff6060">&quot;%d</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>, a);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;p2(<font color="#ff6060">20</font>):<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#00ff00">delegate</font>&nbsp;<font color="#00ff00">int</font>&nbsp;Comparator(<font color="#00ff00">int</font>&nbsp;a, <font color="#00ff00">int</font>&nbsp;b);<br>
+<br>
+<font color="#00ff00">void</font>&nbsp;my_sorting_algorithm(<font color="#00ff00">int</font>[] data, Comparator compare) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">// ... 'compare' is called somewhere in here ...</font><br>
+}<br>
+<br>
+<font color="#00ff00">void</font>&nbsp;main() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">int</font>[] data = { <font color="#ff6060">3</font>, <font color="#ff6060">9</font>, <font color="#ff6060">2</font>, <font color="#ff6060">7</font>, <font color="#ff6060">5</font>&nbsp;};<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">// An anonymous method is passed as the second argument:</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;my_sorting_algorithm(data, (a, b) =&gt; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">if</font>&nbsp;(a &lt; b) <font color="#ffff00">return</font>&nbsp;-<font color="#ff6060">1</font>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">if</font>&nbsp;(a &gt; b) <font color="#ffff00">return</font>&nbsp;<font color="#ff6060">1</font>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">return</font>&nbsp;<font color="#ff6060">0</font>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;});<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#00ff00">delegate</font>&nbsp;<font color="#00ff00">int</font>&nbsp;IntOperation(<font color="#00ff00">int</font>&nbsp;i);<br>
+<br>
+IntOperation curried_add(<font color="#00ff00">int</font>&nbsp;a) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">return</font>&nbsp;(b) =&gt; a + b;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">// 'a' is an outer variable</font><br>
+}<br>
+<br>
+<font color="#00ff00">void</font>&nbsp;main() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ff6060">&quot;2 + 4 = %d</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>, curried_add(<font color="#ff6060">2</font>)(<font color="#ff6060">4</font>));<br>
+}
+            </div>
           </section>
         </div>
 
         <div class="slide">
           <section class="middle">
           <h1 class="large"><font color="blue">命名空間 Namespace</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code-large">
+<font color="#00ff00">namespace</font>&nbsp;NameSpaceName {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">// ...</font><br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code-large">
+<font color="#ffff00">using</font>&nbsp;NameSpaceName;<br>
+<br>
+<font color="#8080ff">// ...</font>
+            </div>
           </section>
         </div>
 
