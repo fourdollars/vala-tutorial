@@ -21,8 +21,8 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
-    <title>HTML5 presentation</title>
-    <link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono" rel="stylesheet" type="text/css" />
+    <title>Vala 幼幼班</title>
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Droid+Sans+Fallback" rel="stylesheet" type="text/css" />
     <style>
       body {
         font: 20px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
@@ -188,27 +188,34 @@
         margin: 0;
       }
 
+      h1.x-large {
+        font-family: 'Droid Sans', 'Droid Sans Fallback';
+        color: black;
+        font-size: 1200%;
+        line-height: 110%;
+      }
+
       h1.large {
-        font-family: 'Droid Sans';
+        font-family: 'Droid Sans', 'Droid Sans Fallback';
         color: black;
         font-size: 800%;
         line-height: 110%;
       }
 
       h1.middle {
-        font-family: 'Droid Sans';
+        font-family: 'Droid Sans', 'Droid Sans Fallback';
         color: black;
         font-size: 500%;
       }
 
       h1.small {
-        font-family: 'Droid Sans';
+        font-family: 'Droid Sans', 'Droid Sans Fallback';
         color: black;
         font-size: 300%;
       }
 
       h2 {
-        font-family: 'Droid Sans';
+        font-family: 'Droid Sans', 'Droid Sans Fallback';
         color: black;
         font-size: 120%;
         padding: 0;
@@ -220,7 +227,7 @@
       }
 
       section, footer {
-        font-family: 'Droid Sans';
+        font-family: 'Droid Sans', 'Droid Sans Fallback';
         color: #3f3f3f;
         text-shadow: rgba(0, 0, 0, 0.2) 0 2px 5px;
         margin: 100px 30px 0;
@@ -350,6 +357,7 @@
       }
 
       div.code-large {
+        font-family: 'Droid Sans Mono', 'Droid Sans Fallback';
         text-align: left;
         display: block;
         padding: 10px 20px;
@@ -366,6 +374,7 @@
       }
 
       div.code {
+        font-family: 'Droid Sans Mono', 'Droid Sans Fallback';
         text-align: left;
         display: block;
         padding: 10px 20px;
@@ -477,7 +486,7 @@
       <div class="slides">
         <div class="slide">
           <section class="middle">
-          <h1 class="large">Vala 幼幼班</h1>
+          <h1 class="x-large">Vala</h1>
           </section>
         </div>
 
@@ -489,7 +498,7 @@
 
         <div class="slide">
           <section class="middle">
-          <h1 class="large">本名</h1>
+          <h1 class="x-large">本名</h1>
           </section>
         </div>
 
@@ -501,13 +510,7 @@
 
         <div class="slide">
           <section class="middle">
-          <h1 class="large">不重要</h1>
-          </section>
-        </div>
-
-        <div class="slide">
-          <section class="middle">
-          <h1 class="large">暱稱</h1>
+          <h1 class="x-large">暱稱</h1>
           </section>
         </div>
 
@@ -519,19 +522,13 @@
 
         <div class="slide">
           <section class="middle">
-          <h1 class="large">不值錢</h1>
-          </section>
-        </div>
-
-        <div class="slide">
-          <section class="middle">
           <h1 class="large">其它的</h1>
           </section>
         </div>
 
         <div class="slide">
           <section class="middle">
-          <h1 class="small">http://about.me/fourdollars</h1>
+          <h1 class="small"><a href="http://about.me/fourdollars">http://about.me/fourdollars</a></h1>
           </section>
         </div>
 
@@ -544,20 +541,19 @@
         <div class="slide">
           <section class="middle">
 
-        <div class="code-large">
+        <div class="code">
 <font color="#8080ff">/*</font><font color="#8080ff">&nbsp;hello.vala </font><font color="#8080ff">*/</font><br>
 <br>
 <font color="#00ff00">void</font>&nbsp;main () {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;Hello World!</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
-}<br>
-</font>
+}
       </div>
           </section>
         </div>
 
         <div class="slide">
           <section class="middle">
-          <h1 class="large">變成</h1>
+          <h1 class="x-large">變成</h1>
           </section>
         </div>
 
@@ -580,8 +576,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;g_type_init ();<br>
 &nbsp;&nbsp;&nbsp;&nbsp;_vala_main ();<br>
 &nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">return</font>&nbsp;<font color="#ff6060">0</font>;<br>
-}<br>
-</font>
+}
       </div>
           </section>
         </div>
@@ -612,7 +607,7 @@
 
         <div class="slide">
           <section class="middle">
-          <h1 class="large">然後</h1>
+          <h1 class="x-large">然後</h1>
           </section>
         </div>
 
@@ -624,7 +619,7 @@
 
         <div class="slide">
           <section class="middle">
-          <h1 class="large">沒了</h1>
+          <h1 class="x-large">沒了</h1>
           </section>
         </div>
 
@@ -678,7 +673,7 @@
 
         <div class="slide">
           <section class="middle">
-          <h1 class="large">蝦咪！</h1>
+          <h1 class="x-large">蝦咪</h1>
           </section>
         </div>
 
@@ -690,7 +685,7 @@
 
         <div class="slide">
           <section class="middle">
-          <h1 class="large">沒錯！</h1>
+          <h1 class="x-large">沒錯</h1>
           </section>
         </div>
 
@@ -703,108 +698,427 @@
         <div class="slide">
           <section class="middle">
         <div class="code">
-<font color="#8080ff">/*</font><font color="#8080ff">&nbsp;MyObject.vala </font><font color="#8080ff">*/</font><br>
+<font color="#8080ff">/*</font><font color="#8080ff">&nbsp;my-object.vala </font><font color="#8080ff">*/</font><br>
 <br>
-<font color="#00ff00">class</font>&nbsp;MyObject : GLib.Object {<br>
+<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">class</font>&nbsp;MyObject : GLib.Object {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">static</font>&nbsp;<font color="#00ff00">int</font>&nbsp;main(<font color="#00ff00">string</font>[] args) {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;Hello World</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">return</font>&nbsp;<font color="#ff6060">0</font>;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}
+        </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="small">$ valac my-object.vala</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="small">產生 my-object 執行檔</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="small">$ valac -C my-object.vala</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="small">產生 my-object.c 原始碼</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="small">$ valac -C -H my-object.h my-object.vala</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="small">產生 my-object.h 標頭檔</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="red">變數介紹</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="blue">基本變數</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+        <div class="code">
+<font color="#8080ff">/*</font><font color="#8080ff">&nbsp;atomic types </font><font color="#8080ff">*/</font><br>
+<font color="#00ff00">unichar</font>&nbsp;c = <font color="#ff6060">'字'</font>;<br>
+<font color="#00ff00">float</font>&nbsp;percentile = <font color="#ff6060">0.75f</font>;<br>
+<font color="#00ff00">const</font>&nbsp;<font color="#00ff00">double</font>&nbsp;MU_BOHR = <font color="#ff6060">927.400915E-26</font>;<br>
+<font color="#00ff00">bool</font>&nbsp;the_box_has_crashed = <font color="#ff6060">false</font>;<br>
+<br>
+<font color="#8080ff">/*</font><font color="#8080ff">&nbsp;defining a struct </font><font color="#8080ff">*/</font><br>
+<font color="#00ff00">struct</font>&nbsp;Vector {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">double</font>&nbsp;x;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">double</font>&nbsp;y;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">double</font>&nbsp;z;<br>
 }<br>
-</font>
-        </div>
+<br>
+<font color="#8080ff">/*</font><font color="#8080ff">&nbsp;defining an enum </font><font color="#8080ff">*/</font><br>
+<font color="#00ff00">enum</font>&nbsp;WindowType {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;TOPLEVEL,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;POPUP<br>
+}
           </section>
         </div>
 
         <div class="slide">
           <section class="middle">
-          <h1 class="small">$ valac MyObject.vala</h1>
+          <h1 class="middle"><b>位元組</b>: char, uchar</h1>
           </section>
         </div>
 
         <div class="slide">
           <section class="middle">
-          <h1 class="small">產生 MyObject 執行檔</h1>
+          <h1 class="middle"><b>字</b>: unichar</h1>
           </section>
         </div>
 
         <div class="slide">
           <section class="middle">
-          <h1 class="small">$ valac -C MyObject.vala</h1>
+          <h1 class="middle"><b>整數</b>: int, uint</h1>
           </section>
         </div>
 
         <div class="slide">
           <section class="middle">
-          <h1 class="small">產生 MyObject.c 原始碼</h1>
+          <h1 class="middle"><b>長整數</b>: long, ulong</h1>
           </section>
         </div>
 
         <div class="slide">
           <section class="middle">
-          <h1 class="small">$ valac -H MyObject.h MyObject.vala</h1>
+          <h1 class="middle"><b>短整數</b>: short, ushort</h1>
           </section>
         </div>
 
         <div class="slide">
           <section class="middle">
-          <h1 class="small">產生 MyObject.h 標頭檔</h1>
+          <h1 class="small"><b>有號保證大小</b>: int8, int16, int32, int64</h1>
           </section>
         </div>
 
         <div class="slide">
           <section class="middle">
-            <h2>
-              Attached Events
-            </h2>
-            <ul>
-              <li>[arrow keys] to go next and previous</p></li>
-              <li>[mouse scroll wheel] to go next and previous</p></li>
-              <li>[Ctrl or Command] + [+/-] to zoom in and out</p></li>
-              <li>[touch gestures] for mobile devices</p></li>
-            </ul>
+          <h1 class="small"><b>無號保證大小</b>: uint8, uint16, uint32, uint64</h1>
           </section>
         </div>
 
         <div class="slide">
           <section class="middle">
-            <h2>
-              Options
-            </h2>
-            <ul>
-              <li><input type="checkbox" id="toggle-size" /><label for="toggle-size"><span>Grow</span></label></li>
-              <li><input type="checkbox" id="toggle-transitions" checked /><label for="toggle-transitions"><span>Transitions</span></label></li>
-              <li><input type="checkbox" id="toggle-gradients" checked /><label for="toggle-gradients"><span>Gradients</span></label></li>
-              <li><input type="checkbox" id="toggle-counter" checked /><label for="toggle-counter"><span>Slide numbers</span></label></li>
-            </ul>
+          <h1 class="middle"><b>浮點數</b>: float, double</h1>
           </section>
         </div>
 
         <div class="slide">
-          <section>
-            <header>
-              <h2>Placeholder content</h2>
-            </header>
-<pre>// some sample code
-&lt;canvas id="canvas" width="838" height="220"&gt;&lt;/canvas&gt;
+          <section class="middle">
+          <h1 class="middle"><b>真假值</b>: true, false</h1>
+          </section>
+        </div>
 
-&lt;script&gt;
-  var canvasContext = document.getElementById("canvas").<b>getContext</b>("2d");
-  canvasContext.<b>fillRect</b>(250, 25, 150, 100);
+        <div class="slide">
+          <section class="middle">
+          <h1 class="middle"><b>資料結構</b>: struct</h1>
+          </section>
+        </div>
 
-  canvasContext.<b>beginPath</b>();
-  canvasContext.<b>arc</b>(450, 110, 100, Math.PI * 1/2, Math.PI * 3/2);
-  canvasContext.<b>lineWidth</b> = 15;
-  canvasContext.<b>lineCap</b> = 'round';
-  canvasContext.<b>strokeStyle</b> = 'rgba(255, 127, 0, 0.5)';
-  canvasContext.<b>stroke</b>();
-&lt;/script&gt;
-</pre>
-            <ul class="bulleted">
-              <li>point 1</li>
-              <li>point 2</li>
-              <li>point 3</li>
-            </ul>
+        <div class="slide">
+          <section class="middle">
+          <h1 class="middle"><b>列舉值</b>: enum</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="x-large"><font color="blue">陣列</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">一維陣列</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code-large">
+<font color="#00ff00">int</font>[] a = <font color="#ffff00">new</font>&nbsp;<font color="#00ff00">int</font>[<font color="#ff6060">10</font>];<br>
+<font color="#00ff00">int</font>[] b = { <font color="#ff6060">2</font>, <font color="#ff6060">4</font>, <font color="#ff6060">6</font>, <font color="#ff6060">8</font>&nbsp;};<br>
+<br>
+<font color="#00ff00">int</font>[] c = b[<font color="#ff6060">1</font>:<font color="#ff6060">3</font>];<br>
+<font color="#8080ff">// =&gt; { 4, 6 }</font>
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">二維陣列</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code-large">
+<font color="#00ff00">int</font>[,] c = <font color="#ffff00">new</font>&nbsp;<font color="#00ff00">int</font>[<font color="#ff6060">3</font>,<font color="#ff6060">4</font>];<br>
+<font color="#00ff00">int</font>[,] d = {{<font color="#ff6060">2</font>, <font color="#ff6060">4</font>, <font color="#ff6060">6</font>, <font color="#ff6060">8</font>},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<font color="#ff6060">3</font>, <font color="#ff6060">5</font>, <font color="#ff6060">7</font>, <font color="#ff6060">9</font>},<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<font color="#ff6060">1</font>, <font color="#ff6060">3</font>, <font color="#ff6060">5</font>, <font color="#ff6060">7</font>}};<br>
+d[<font color="#ff6060">2</font>,<font color="#ff6060">3</font>] = <font color="#ff6060">42</font>;
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">N 維陣列</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="middle">int[,,,,,,]</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="x-large"><font color="blue">字串</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">UTF-8</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code-large">
+ <font color="#00ff00">string</font>&nbsp;text = <font color="#ff6060">&quot;這是個字串&quot;</font>;
+           </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#00ff00">string</font>&nbsp;verbatim = <font color="#ff6060">&quot;&quot;&quot;這也是個字串</font><br>
+<font color="#ff6060">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 可以跨行的字串&quot;&quot;&quot;</font>;
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#00ff00">int</font>&nbsp;a = <font color="#ff6060">6</font>, b = <font color="#ff6060">7</font>;<br>
+<font color="#00ff00">string</font>&nbsp;s = @<font color="#ff6060">&quot;$a 乘以 $b 等於 $(a * b)&quot;</font>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">/*</font><font color="#8080ff">&nbsp;=&gt; &quot;6 乘以 7 等於 42&quot; </font><font color="#8080ff">*/</font>
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#00ff00">string</font>&nbsp;slice = <font color="#ff6060">&quot;字串切片&quot;</font>;<br>
+<font color="#00ff00">string</font>&nbsp;s1 = slice[<font color="#ff6060">0</font>:<font color="#ff6060">2</font>];<br>
+<font color="#8080ff">// =&gt; &quot;字串&quot;</font><br>
+<font color="#00ff00">string</font>&nbsp;s2 = slice[-<font color="#ff6060">2</font>:slice.length];<br>
+<font color="#8080ff">// =&gt; &quot;切片&quot;</font><br>
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">數值轉換</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#00ff00">bool</font>&nbsp;b = <font color="#ff6060">&quot;false&quot;</font>.to_bool();<br>
+<font color="#8080ff">// =&gt; false</font><br>
+<font color="#00ff00">int</font>&nbsp;i = <font color="#ff6060">&quot;-52&quot;</font>.to_int();<br>
+<font color="#8080ff">// =&gt; -52</font><br>
+<font color="#00ff00">double</font>&nbsp;d = <font color="#ff6060">&quot;6.67428E-11&quot;</font>.to_double();<br>
+<font color="#8080ff">// =&gt; 6.67428E-11</font><br>
+<font color="#00ff00">string</font>&nbsp;s1 = <font color="#ff6060">true</font>.to_string();<br>
+<font color="#8080ff">// =&gt; &quot;true&quot;</font><br>
+<font color="#00ff00">string</font>&nbsp;s2 = <font color="#ff6060">21.</font>to_string();<br>
+<font color="#8080ff">// =&gt; &quot;21&quot;</font><br>
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="middle">標準輸入輸出</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+stdout.printf(<font color="#ff6060">&quot;Hello, world</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
+stdout.printf(<font color="#ff6060">&quot;%d %g %s</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>, <font color="#ff6060">42</font>, <font color="#ff6060">3.1415</font>, <font color="#ff6060">&quot;Vala&quot;</font>);<br>
+<font color="#00ff00">string</font>&nbsp;input = stdin.read_line();<br>
+<font color="#00ff00">int</font>&nbsp;number = stdin.read_line().to_int();<br>
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">字串比對</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#00ff00">string</font>&nbsp;family = <font color="#ff6060">&quot;溫瑞凡 謝安真 溫雨萌 黎薇恩&quot;</font>;<br>
+<br>
+<font color="#ffff00">if</font>&nbsp;(<font color="#ff6060">&quot;黎薇恩&quot;</font>&nbsp;<font color="#ffff00">in</font>&nbsp;family) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;家裡有小三</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
+}<br>
+<br>
+<font color="#00ff00">string</font>[] people = {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ff6060">&quot;溫瑞凡&quot;</font>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ff6060">&quot;謝安真&quot;</font>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ff6060">&quot;溫雨萌&quot;</font>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ff6060">&quot;黎薇恩&quot;</font>};<br>
+<br>
+<font color="#ffff00">foreach</font>&nbsp;(<font color="#00ff00">string</font>&nbsp;person <font color="#ffff00">in</font>&nbsp;people) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">if</font>&nbsp;(person == <font color="#ff6060">&quot;黎薇恩&quot;</font>) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;找到小三</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="x-large"><font color="blue">物件</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large">稍後</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="blue">型別推斷</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="yellow">var</font> foo = ...</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#ffff00">var</font>&nbsp;p = <font color="#ffff00">new</font>&nbsp;Person();<br>
+<font color="#8080ff">// same as: Person p = new Person();</font><br>
+<font color="#ffff00">var</font>&nbsp;s = <font color="#ff6060">&quot;hello&quot;</font>;<br>
+<font color="#8080ff">// same as: string s = &quot;hello&quot;;</font><br>
+<font color="#ffff00">var</font>&nbsp;l = <font color="#ffff00">new</font>&nbsp;List&lt;<font color="#00ff00">int</font>&gt;();<br>
+<font color="#8080ff">// same as: List&lt;int&gt; l = new List&lt;int&gt;();</font><br>
+<font color="#ffff00">var</font>&nbsp;i = <font color="#ff6060">10</font>;<br>
+<font color="#8080ff">// same as: int i = 10;</font>
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="x-large"><font color="red">運算元</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="red">控制結構</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="red">語言元素</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="blue">方法 Method</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="blue">委任 Delegate</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="blue">閉包 Closures</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="blue">命名空間 Namespace</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="blue">資料結構 Struct</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="blue">類別 Class</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="blue">介面 Interface</font></h1>
           </section>
         </div>
 
