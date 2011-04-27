@@ -356,7 +356,7 @@
         border: 1px solid rgba(0, 0, 0, 0.2);
       }
 
-      div.code-large {
+      div.x-code {
         font-family: 'Droid Sans Mono', 'Droid Sans Fallback';
         text-align: left;
         display: block;
@@ -371,6 +371,7 @@
         margin-bottom: 10px;
         border: 1px solid rgba(0, 0, 0, 0.2);
         font-size: 200%;
+        line-height:100%;
       }
 
       div.code {
@@ -388,6 +389,24 @@
         margin-bottom: 10px;
         border: 1px solid rgba(0, 0, 0, 0.2);
         font-size: 150%;
+        line-height:100%;
+      }
+
+      div.s-code {
+        font-family: 'Droid Sans Mono', 'Droid Sans Fallback';
+        text-align: left;
+        display: block;
+        padding: 10px 20px;
+        margin: 10px 20px;
+        color: black;
+        background: rgba(255, 255, 255, 0.4);
+        -webkit-border-radius: 8px;
+        -khtml-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        font-size: 125%;
         line-height:100%;
       }
 
@@ -880,7 +899,7 @@
 
         <div class="slide">
           <section class="middle">
-            <div class="code-large">
+            <div class="x-code">
 <font color="#00ff00">int</font>[] a = <font color="#ffff00">new</font>&nbsp;<font color="#00ff00">int</font>[<font color="#ff6060">10</font>];<br>
 <font color="#00ff00">int</font>[] b = { <font color="#ff6060">2</font>, <font color="#ff6060">4</font>, <font color="#ff6060">6</font>, <font color="#ff6060">8</font>&nbsp;};<br>
 <br>
@@ -898,7 +917,7 @@
 
         <div class="slide">
           <section class="middle">
-            <div class="code-large">
+            <div class="x-code">
 <font color="#00ff00">int</font>[,] c = <font color="#ffff00">new</font>&nbsp;<font color="#00ff00">int</font>[<font color="#ff6060">3</font>,<font color="#ff6060">4</font>];<br>
 <font color="#00ff00">int</font>[,] d = {{<font color="#ff6060">2</font>, <font color="#ff6060">4</font>, <font color="#ff6060">6</font>, <font color="#ff6060">8</font>},<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<font color="#ff6060">3</font>, <font color="#ff6060">5</font>, <font color="#ff6060">7</font>, <font color="#ff6060">9</font>},<br>
@@ -934,7 +953,7 @@ d[<font color="#ff6060">2</font>,<font color="#ff6060">3</font>] = <font color="
 
         <div class="slide">
           <section class="middle">
-            <div class="code-large">
+            <div class="x-code">
  <font color="#00ff00">string</font>&nbsp;text = <font color="#ff6060">&quot;這是個字串&quot;</font>;
            </div>
           </section>
@@ -1142,7 +1161,7 @@ stdout.printf(<font color="#ff6060">&quot;%d %g %s</font><font color="#ff40ff">\
 
         <div class="slide">
           <section class="middle">
-            <div class="code-large">
+            <div class="x-code">
 stdout.printf(<font color="#ff6060">&quot;Hello, %s!</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>, name ?? <font color="#ff6060">&quot;unknown person&quot;</font>);
             </div>
           </section>
@@ -1155,7 +1174,7 @@ stdout.printf(<font color="#ff6060">&quot;Hello, %s!</font><font color="#ff40ff"
 
         <div class="slide">
           <section class="middle">
-            <div class="code-large">
+            <div class="x-code">
 <font color="#ffff00">while</font>&nbsp;(a &gt; b) {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;a--;<br>
 }:
@@ -1165,7 +1184,7 @@ stdout.printf(<font color="#ff6060">&quot;Hello, %s!</font><font color="#ff40ff"
 
         <div class="slide">
           <section class="middle">
-            <div class="code-large">
+            <div class="x-code">
 <font color="#ffff00">do</font>&nbsp;{<br>
 &nbsp;&nbsp;&nbsp;&nbsp;a--;<br>
 } <font color="#ffff00">while</font>&nbsp;(a &gt; b);<br>
@@ -1176,7 +1195,7 @@ stdout.printf(<font color="#ff6060">&quot;Hello, %s!</font><font color="#ff40ff"
 
         <div class="slide">
           <section class="middle">
-            <div class="code-large">
+            <div class="x-code">
 <font color="#ffff00">for</font>&nbsp;(<font color="#00ff00">int</font>&nbsp;a = <font color="#ff6060">0</font>; a &lt; <font color="#ff6060">10</font>; a++) {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;%d</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>, a);<br>
 }
@@ -1186,7 +1205,7 @@ stdout.printf(<font color="#ff6060">&quot;Hello, %s!</font><font color="#ff40ff"
 
         <div class="slide">
           <section class="middle">
-            <div class="code-large">
+            <div class="x-code">
 <font color="#ffff00">foreach</font>&nbsp;(<font color="#00ff00">int</font>&nbsp;a <font color="#ffff00">in</font>&nbsp;int_array) {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;%d</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>, a);<br>
 }
@@ -1212,7 +1231,7 @@ stdout.printf(<font color="#ff6060">&quot;Hello, %s!</font><font color="#ff40ff"
 
         <div class="slide">
           <section class="middle">
-            <div class="code-large">
+            <div class="x-code">
 <font color="#ffff00">switch</font>&nbsp;(a) {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">case</font>&nbsp;<font color="#ff6060">1</font>:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;one</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
@@ -1289,7 +1308,7 @@ stdout.printf(<font color="#ff6060">&quot;Hello, %s!</font><font color="#ff40ff"
 
         <div class="slide">
           <section class="middle">
-            <div class="code-large">
+            <div class="x-code">
 f(<font color="#ff6060">2</font>);<br>
 f(<font color="#ff6060">2</font>, <font color="#ff6060">&quot;hi&quot;</font>);<br>
 f(<font color="#ff6060">2</font>, <font color="#ff6060">&quot;hi&quot;</font>, <font color="#ff6060">0.75</font>);<br>
@@ -1445,7 +1464,7 @@ IntOperation curried_add(<font color="#00ff00">int</font>&nbsp;a) {<br>
 
         <div class="slide">
           <section class="middle">
-            <div class="code-large">
+            <div class="x-code">
 <font color="#00ff00">namespace</font>&nbsp;NameSpaceName {<br>
 &nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">// ...</font><br>
 }
@@ -1455,10 +1474,54 @@ IntOperation curried_add(<font color="#00ff00">int</font>&nbsp;a) {<br>
 
         <div class="slide">
           <section class="middle">
-            <div class="code-large">
+            <div class="x-code">
 <font color="#ffff00">using</font>&nbsp;NameSpaceName;<br>
 <br>
 <font color="#8080ff">// ...</font>
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#8080ff">// foo-bar.vala</font><br>
+<br>
+<font color="#00ff00">namespace</font>&nbsp;Foo {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">class</font>&nbsp;Bar : GLib.Object {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">void</font>&nbsp;blah () {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;Hello World!</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#8080ff">// main.vala</font><br>
+<br>
+<font color="#ffff00">using</font>&nbsp;Foo;<br>
+<br>
+<font color="#00ff00">void</font>&nbsp;main () {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">var</font>&nbsp;bar = <font color="#ffff00">new</font>&nbsp;Bar();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bar.blah();<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#8080ff">// main.vala</font><br>
+<br>
+<font color="#00ff00">void</font>&nbsp;main () {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffff00">var</font>&nbsp;bar = <font color="#ffff00">new</font>&nbsp;Foo.Bar();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bar.blah();<br>
+}
             </div>
           </section>
         </div>
@@ -1471,13 +1534,75 @@ IntOperation curried_add(<font color="#00ff00">int</font>&nbsp;a) {<br>
 
         <div class="slide">
           <section class="middle">
+            <div class="x-code">
+<font color="#00ff00">struct</font>&nbsp;StructName {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">int</font>&nbsp;a;<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="x-code">
+<font color="#00ff00">struct</font>&nbsp;Color {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">double</font>&nbsp;red;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">double</font>&nbsp;green;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">double</font>&nbsp;blue;<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#8080ff">// without type inference</font><br>
+Color c1 = Color();<br>
+Color c2 = { <font color="#ff6060">0.5</font>, <font color="#ff6060">0.5</font>, <font color="#ff6060">1.0</font>&nbsp;};<br>
+Color c3 = Color() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;red = <font color="#ff6060">0.5</font>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;green = <font color="#ff6060">0.5</font>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;blue = <font color="#ff6060">1.0</font><br>
+};<br>
+<br>
+<font color="#8080ff">// with type inference</font><br>
+<font color="#ffff00">var</font>&nbsp;c4 = Color();<br>
+<font color="#ffff00">var</font>&nbsp;c5 = Color() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;red = <font color="#ff6060">0.5</font>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;green = <font color="#ff6060">0.5</font>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;blue = <font color="#ff6060">1.0</font><br>
+};
+            </div>
+          </section>
+        </div>
+        <div class="slide">
+          <section class="middle">
           <h1 class="large"><font color="blue">類別 Class</font></h1>
           </section>
         </div>
 
         <div class="slide">
           <section class="middle">
+            <div class="s-code">
+<font color="#00ff00">class</font>&nbsp;ClassName : SuperClassName, InterfaceName {<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
           <h1 class="large"><font color="blue">介面 Interface</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="s-code">
+<font color="#00ff00">interface</font>&nbsp;InterfaceName : SuperInterfaceName {<br>
+}
+            </div>
           </section>
         </div>
 
