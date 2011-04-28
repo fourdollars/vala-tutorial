@@ -1862,7 +1862,76 @@ alice.notify[<font color="#ff6060">&quot;age&quot;</font>].connect((s, p) =&gt; 
 
         <div class="slide">
           <section class="middle">
-          <h1 class="large"><font color="red">介面 Interface</font></h1>
+          <h1 class="large"><font color="blue">繼承 Inheritance</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="s-code">
+<font color="#00ff00">class</font>&nbsp;SuperClass : GLib.Object {<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">private</font>&nbsp;<font color="#00ff00">int</font>&nbsp;data;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;SuperClass(<font color="#00ff00">int</font>&nbsp;data) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">this</font>.data = data;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">protected</font>&nbsp;<font color="#00ff00">void</font>&nbsp;protected_method() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">static</font>&nbsp;<font color="#00ff00">void</font>&nbsp;public_static_method() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}<br>
+<br>
+<font color="#00ff00">class</font>&nbsp;SubClass : SuperClass {<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;SubClass() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">base</font>(<font color="#ff6060">10</font>);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="blue">抽象類別 Abstract Classes</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="s-code">
+<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">abstract</font>&nbsp;<font color="#00ff00">class</font>&nbsp;Animal : Object {<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">void</font>&nbsp;eat() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;*chomp chomp*</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">abstract</font>&nbsp;<font color="#00ff00">void</font>&nbsp;say_hello();<br>
+}<br>
+<br>
+<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">class</font>&nbsp;Tiger : Animal {<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">override</font>&nbsp;<font color="#00ff00">void</font>&nbsp;say_hello() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;*roar*</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}<br>
+<br>
+<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">class</font>&nbsp;Duck : Animal {<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">override</font>&nbsp;<font color="#00ff00">void</font>&nbsp;say_hello() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;*quack*</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="blue">介面 Interface Mixins</font></h1>
           </section>
         </div>
 
@@ -1872,6 +1941,341 @@ alice.notify[<font color="#ff6060">&quot;age&quot;</font>].connect((s, p) =&gt; 
 <font color="#00ff00">interface</font>&nbsp;InterfaceName : SuperInterfaceName {<br>
 }
             </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">interface</font>&nbsp;ITest : GLib.Object {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">abstract</font>&nbsp;<font color="#00ff00">int</font>&nbsp;data_1 { <font color="orange">get</font>; <font color="orange">set</font>; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">abstract</font>&nbsp;<font color="#00ff00">void</font>&nbsp;method_1();<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">class</font>&nbsp;Test1 : GLib.Object, ITest {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">int</font>&nbsp;data_1 { <font color="orange">get</font>; <font color="orange">set</font>; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">void</font>&nbsp;method_1() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="x-code">
+<font color="orange">var</font>&nbsp;t = <font color="orange">new</font>&nbsp;Test1();<br>
+t.method_1();<br>
+<br>
+ITest i = t;<br>
+i.method_1();
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">interface</font>&nbsp;List : Collection {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">// 強制 List 介面一定要實作 Collection 介面</font><br>
+}<br>
+<br>
+<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">class</font>&nbsp;ListClass : GLib.Object, Collection, List {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">// 所有需要實作的介面一定要全部寫出來</font><br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="middle"><font color="blue">多型 Polymorphism</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="s-code">
+<font color="#00ff00">class</font>&nbsp;SuperClass : GLib.Object {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">void</font>&nbsp;method_1() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">// 這裡有個 method_1()</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;SuperClass.method_1()</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}<br>
+<br>
+<font color="#00ff00">class</font>&nbsp;SubClass : SuperClass {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">void</font>&nbsp;method_1() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">// 這裡也有個 method_1()</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;SubClass.method_1()</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="x-code">
+SubClass o1 = <font color="orange">new</font>&nbsp;SubClass();<br>
+o1.method_1();<br>
+<br>
+SuperClass o2 = o1;<br>
+o2.method_1(); <font color="#8080ff">// 哪一個才是對的？</font>
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="s-code">
+<font color="#00ff00">class</font>&nbsp;SuperClass : GLib.Object {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">virtual</font>&nbsp;<font color="#00ff00">void</font>&nbsp;method_1() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;SuperClass.method_1()</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}<br>
+<br>
+<font color="#00ff00">class</font>&nbsp;SubClass : SuperClass {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">override</font>&nbsp;<font color="#00ff00">void</font>&nbsp;method_1() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;SubClass.method_1()</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="x-code">
+SubClass o1 = <font color="orange">new</font>&nbsp;SubClass();<br>
+o1.method_1();<br>
+<br>
+SuperClass o2 = o1;<br>
+o2.method_1();<br>
+<font color="#8080ff">// 變成 SubClass 裡面 method_1()</font>
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="x-code">
+<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">override</font>&nbsp;<font color="#00ff00">void</font>&nbsp;method_name() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">base</font>.method_name();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;extra_task();<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="blue">方法隱匿 Method Hiding</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#00ff00">class</font>&nbsp;Foo : Object {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">void</font>&nbsp;my_method() { }<br>
+}<br>
+<br>
+<font color="#00ff00">class</font>&nbsp;Bar : Foo {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="orange">new</font>&nbsp;<font color="#00ff00">void</font>&nbsp;my_method() { }<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="x-code">
+<font color="#00ff00">void</font>&nbsp;main() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">var</font>&nbsp;bar = <font color="orange">new</font>&nbsp;Bar();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;bar.my_method();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(bar <font color="orange">as</font>&nbsp;Foo).my_method();<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="middle"><font color="blue">執行期型別判斷</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="x-code">
+<font color="#00ff00">bool</font>&nbsp;b = object <font color="orange">is</font>&nbsp;SomeTypeName;
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+Type type = object.get_type();<br>
+<br>
+stdout.printf(<font color="#ff6060">&quot;%s</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>, type.name());
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+Type type = <font color="orange">typeof</font>(Foo);<br>
+<br>
+Foo foo = (Foo) Object.<font color="orange">new</font>(type);
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="middle"><font color="blue">動態型別轉換</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="x-code">
+Button b = widget <font color="orange">as</font>&nbsp;Button;
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="s-code">
+Button b =<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(widget <font color="orange">is</font>&nbsp;Button) ? (Button) widget : <font color="#ff6060">null</font>;
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="middle"><font color="blue">泛型 Generics</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">class</font>&nbsp;Wrapper&lt;G&gt; : GLib.Object {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">private</font>&nbsp;G data;<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">void</font>&nbsp;set_data(G data) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">this</font>.data = data;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;G get_data() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">return</font>&nbsp;<font color="orange">this</font>.data;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="code">
+<font color="orange">var</font>&nbsp;wrapper = <font color="orange">new</font>&nbsp;Wrapper&lt;<font color="#00ff00">string</font>&gt;();<br><br>
+wrapper.set_data(<font color="#ff6060">&quot;test&quot;</font>);<br><br>
+<font color="orange">var</font>&nbsp;data = wrapper.get_data();
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="s-code">
+<font color="#00ff00">class</font>&nbsp;TestClass : GLib.Object {<br>
+}<br>
+<br>
+<font color="#00ff00">void</font>&nbsp;accept_object_wrapper(Wrapper&lt;Glib.Object&gt; w) {<br>
+}<br>
+<br>
+<font color="orange">var</font>&nbsp;test_wrapper = <font color="orange">new</font>&nbsp;Wrapper&lt;TestClass&gt;();<br>
+accept_object_wrapper(test_wrapper);
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="large"><font color="blue">建構區塊</font></h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="s-code">
+<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">class</font>&nbsp;Person : Object {<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">/*</font><font color="#8080ff">&nbsp;Construction properties </font><font color="#8080ff">*/</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">string</font>&nbsp;name { <font color="orange">get</font>; <font color="orange">construct</font>; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">int</font>&nbsp;age { <font color="orange">get</font>; <font color="orange">construct</font>&nbsp;<font color="orange">set</font>; }<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;Person(<font color="#00ff00">string</font>&nbsp;name) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Object(name: name);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#00ff00">public</font>&nbsp;Person.with_age(<font color="#00ff00">string</font>&nbsp;name, <font color="#00ff00">int</font>&nbsp;years) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Object(name: name, age: years);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="orange">construct</font>&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">// do anything else</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stdout.printf(<font color="#ff6060">&quot;Welcome %s</font><font color="#ff40ff">\n</font><font color="#ff6060">&quot;</font>, <font color="orange">this</font>.name);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="s-code">
+<font color="#8080ff">/*</font><font color="#8080ff">&nbsp;This snippet of code is run when the class</font><br>
+<font color="#8080ff">&nbsp;* is registered with the type system </font><font color="#8080ff">*/</font><br>
+<font color="#00ff00">static</font>&nbsp;<font color="orange">construct</font>&nbsp;{<br>
+&nbsp;&nbsp;...<br>
+}
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+            <div class="s-code">
+<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">int</font>&nbsp;a { <font color="orange">get</font>; <font color="#00ff00">private</font>&nbsp;<font color="orange">set</font>; }&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">// Read</font><br>
+<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">int</font>&nbsp;b { <font color="#00ff00">private</font>&nbsp;<font color="orange">get</font>; <font color="orange">set</font>; }&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">// Write</font><br>
+<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">int</font>&nbsp;c { <font color="orange">get</font>; <font color="orange">set</font>; }&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">// Read / Write</font><br>
+<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">int</font>&nbsp;d { <font color="orange">get</font>; <font color="orange">set</font>&nbsp;<font color="orange">construct</font>; }&nbsp;&nbsp;<font color="#8080ff">// Read / Write / Construct</font><br>
+<font color="#00ff00">public</font>&nbsp;<font color="#00ff00">int</font>&nbsp;e { <font color="orange">get</font>; <font color="orange">construct</font>; }&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#8080ff">// Read / Write-Construct-Only</font>
+            </div>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="x-large">問題</h1>
+          </section>
+        </div>
+
+        <div class="slide">
+          <section class="middle">
+          <h1 class="x-large">謝謝</h1>
           </section>
         </div>
 
